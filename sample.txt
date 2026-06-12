@@ -1,0 +1,12 @@
+Artificial Intelligence (AI) and Machine Learning (ML) have revolutionized how we interact with data. 
+Retrieval-Augmented Generation (RAG) is a technique that bridges the gap between large language models and proprietary data. 
+By combining the generative capabilities of an LLM with a retrieval system, RAG ensures that the answers generated are grounded in specific, up-to-date documents.
+
+In a typical RAG setup:
+1. Documents are loaded and split into smaller chunks.
+2. These chunks are converted into vector representations using an embedding model.
+3. The vectors are stored in a Vector Database like ChromaDB or FAISS.
+4. When a user asks a question, the system converts the question into a vector and retrieves the most similar chunks.
+5. The retrieved chunks and the user's question are sent to the LLM to generate a final answer.
+
+Grok, developed by xAI, is a powerful AI model that can act as the reasoning engine (LLM) in a RAG pipeline. By integrating Grok with Langchain, developers can quickly build intelligent applications that cite their sources and avoid hallucinations.
